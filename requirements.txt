@@ -1,0 +1,6 @@
+cython
+pycocotools
+torch
+torchvision
+scipy
+opencv-python

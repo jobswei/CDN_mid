@@ -1,0 +1,8 @@
+def infer_with_base64(encoded_strings=None, path=None):
+    with open(path, "rb") as image_file:
+        # 将图片文件的内容进行Base64编码
+        encoded_string = base64.b64encode(image_file.read()).decode()
+    decoded_bytes = base64.b64decode(encoded_string)
+    image = Image.open(BytesIO(decoded_bytes))
+    img_array = np.array(image)
+    return img_array

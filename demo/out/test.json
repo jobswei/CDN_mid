@@ -1,0 +1,1 @@
+{'filename': 'test.jpg', 'predictions': [{'bbox': [1596.1407, 770.80664, 1920.4912, 1081.7671], 'category_id': 0}, {'bbox': [1651.7029, 660.7237, 1835.3579, 849.91766], 'category_id': 2}], 'hoi_prediction': [{'subject_id': 0, 'object_id': 1, 'category_id': 0, 'score': 0.7550957}]}

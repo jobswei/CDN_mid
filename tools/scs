@@ -1,0 +1,32 @@
+CUDA_VISIBLE_DEVICES=2,3 python -m torch.distributed.launch \
+        --nproc_per_node=4 \
+        --use_env \
+        main.py \
+        --pretrained /home/wzy/CDN/pretrained/hico_cdn_s.pth \
+        --output_dir work_dir \
+        --dataset_file hico \
+        --hoi_path /home/wzy/CDN/data/demo_video_fps2/hico \
+        --num_obj_classes 80 \
+        --num_verb_classes 117 \
+        --backbone resnet50 \
+        --num_queries 64 \
+        --dec_layers_hopd 3 \
+        --dec_layers_interaction 3 \
+        --epochs 40 \
+        --lr_drop 30 \
+        --use_nms_filter
+
+python main.py \
+        --pretrained /home/wzy/CDN/pretrained/hico_cdn_s.pth \
+        --output_dir logs \
+        --dataset_file hico \
+        --hoi_path /home/wzy/CDN/data/demo_video_fps2/hico \
+        --num_obj_classes 80 \
+        --num_verb_classes 117 \
+        --backbone resnet50 \
+        --num_queries 64 \
+        --dec_layers_hopd 3 \
+        --dec_layers_interaction 3 \
+        --epochs 40 \
+        --lr_drop 30 \
+        --use_nms_filter
