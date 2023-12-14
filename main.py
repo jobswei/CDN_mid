@@ -369,7 +369,7 @@ if __name__ == '__main__':
     args.dataset_file="hico"
     args.hoi_path="./data/demo_video_fps2/hico3"
     # args.hoi_path="/home/wzy/CDN_mod/data/hico_20160224_det"
-    args.lr_backbone=2e-4
+    args.lr_backbone=1e-4
     args.num_obj_classes=2
     args.num_verb_classes=1
     args.backbone="resnet101"
@@ -383,7 +383,7 @@ if __name__ == '__main__':
     args.batch_size=4
     # args.device="cuda:0"
     # args.output_dir="./work_dir/1205_cdn_l_lr_1e-4"
-    args.output_dir="./work_dir/1211_cdn_l_lr_5e-5_bs16_lr2e-4"
+    args.output_dir="./work_dir/1211_cdn_l_lr_1e-4_bs16"
     args.eval=False
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
