@@ -1,4 +1,8 @@
-# CDN
+# CDN-mod
+
+A modified version of HOI algorithm CDN for airport project.
+Origin work and code is at [CDN](https://github.com/YueLiao/CDN.git)
+
 Code for our NeurIPS 2021 paper "[Mining the Benefits of Two-stage and One-stage HOI Detection](https://arxiv.org/pdf/2108.05077.pdf)".
 
 Contributed by Aixi Zhang*, [Yue Liao*](https://liaoyue.net/), [Si Liu](http://colalab.org/people), Miao Lu, Yongliang Wang, Chen Gao and Xiaobo Li.
